@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    font-family: Rubik;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    padding: 150px 100px 0 100px;
+}
+
+.active {
+    color: #fff !important;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.time-tracking {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-block {
+    height: 560px;
+    width: 300px;
+    background-color: hsl(235, 46%, 20%);
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+.profile-block {
+    height: 320px;
+    background-color:hsl(246, 80%, 60%);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.profile-block img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+}
+
+.profile-block p {
+    color: #ffffff7e;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+.profile-block h2 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: -15px;
+}
+
+.bottom-main {
+    padding: 20px;
+}
+
+.bottom-main .buttonCard {
+    display: block;
+    margin-top: 15px;
+    background-color:hsl(235, 46%, 20%);
+    border: none;
+    cursor: pointer;
+    color: #ffffff7e; 
+}
+
+.bottom-main button:hover {
+    color: #fff;
+}
+
+.status-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 30px; /* Промежуток между элементами */
+    width: 800px;
+    height: 550px;
+}
+
+.time-block {
+    min-height: 262px;
+    border-radius: 17px;
+    border: 1px solid hsl(226, 43%, 10%);
+    text-align: right;
+}
+
+.time-block svg {
+    width: 100px;
+    height: 80px;
+}
+
+.time-content button {
+    height: 20px;
+    width: 30px;
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.time-content svg {
+    width: 22px;
+    height: 8px;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+    background-color:hsl(195, 74%, 62%);
+}
+
+.study {
+    background-color:hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color:hsl(145, 58%, 55%);
+}
+
+.social {
+    background-color:hsl(264, 64%, 52%);
+}
+
+.selfCare {
+    background-color:hsl(43, 84%, 65%);
+}
+
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.content-top h2 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.time-content {
+    position: relative;
+    background-color: hsl(235, 46%, 20%);
+    max-height: 200px;
+    margin-top: -20px;
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 1;
+    text-align: left;
+    cursor: pointer;
+}
+
+.time-content:hover {
+    background-color: hsl(235, 37%, 27%);
+}
+
+
+.main-content .newInfo {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+.main-content .oldInfo {
+    color: #fff;
+}
+
+.weeklyInfo {
+    display: none;
+}
+
+.monthInfo {
+    display: none;
+}
+
+.attribution { 
+    display: none;
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1212px) {
+    body {
+        padding-top: 60px;
+    }
+    .status-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Три колонки */
+        gap: 30px; /* Промежуток между элементами */
+        width: 500px;
+        height: 550px;
+    }  
+}
+
+@media (max-width: 895px) {
+    .time-tracking {
+        display: block;
+    }
+    .main-block {
+        width: 500px;
+        height: 435px;
+        margin-bottom: 30px;
+    }
+    .profile-block {
+        height: 210px;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-block {
+        width: 358px;
+    }
+    .status-block {
+        grid-template-columns: repeat(1, 1fr);
+        width: 358px;
+    }
+}
+
+@media (max-width: 395px) {
+    .main-block {
+        width: 280px;
+        height: 220px;
+    }
+    .profile-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 120px;
+    }
+    .profile-block img {
+        width: 55px;
+        height: 55px;
+    }
+    .profile-block h2 {
+        font-size: 25px;
+    }
+    .bottom-main {
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-main .buttonCard {
+        display: inline-block;
+    }
+    .status-block {
+        width: 280px;
+    }
+    
+}
